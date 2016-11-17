@@ -1,0 +1,101 @@
+// @import 'bourbon/bourbon'
+@import 'signin-dialog'
+
+.img-bar
+		position: absolute
+		font-size: small
+		font-weight: bold
+		margin: 0
+		box-sizing: border-box
+		width: 152px
+
+.btn-rmv
+		position: absolute
+		cursor: pointer
+		opacity: 0.5
+		margin-left: 1px
+		width: 21px
+		height: 26px
+		outline: none
+
+		&:hover .btn-rmv-head
+				transform : rotate(46deg)
+				transform-origin: right bottom
+
+.btn-rmv-head
+		background: url("../img/garbage.png") no-repeat scroll 0px 0px
+		position: inherit
+		height: 6px
+		top: 3px
+		margin: 5px
+		width: 15px
+		left: -2px
+		transition: all 270ms
+
+.btn-rmv-base
+		position: inherit
+		width: 15px
+		top: 8px
+		margin: 4px
+		background: rgba(0, 0, 0, 0) url("../img/garbage.png") no-repeat scroll -1px -4px
+		height: 12px
+
+.img-bar .qua
+		float:	right 
+		font-size: 7pt
+		opacity: 0.6
+		&:after
+				content: ' ✓'
+				opacity: 1
+				color: green
+				margin-right: 5px
+				font-size: 10pt
+
+button.btn-add.md-fab.md-primary.md-button.md-ink-ripple.btn-add
+
+		background-color: white
+		color: #199819
+		&:active
+				box-shadow: 0px 0px 80px
+
+.md-button.md-primary.md-fab.btn-plus
+		display: block
+		font-size: 40pt
+		background-color: white
+		color: #4BB72B
+		transition: all 0.08s cubic-bezier(0, 2.13, 0.86, 1.61)
+		&:active
+				box-shadow: 0px 0px 80px
+		&:hover , &:focus
+				background-color: white
+		
+.inp-qua
+		width: 19%
+		display: block
+		outline: none
+		border: none
+		color: #FFFFFF
+		text-align: center
+		background-color: tomato
+		margin: 0
+		font-weight: bold
+		overflow: hidden
+
+
+.md-button.md-primary.md-fab.btn-minus
+		display: block
+		font-size: 40pt
+		background-color: #fff
+		color: #FD6E6E
+		line-height: 0
+		padding-bottom: 4%
+		transition: all 0.08s cubic-bezier(0, 2.13, 0.86, 1.61)
+
+		&:hover, &:focus
+				background-color: white
+		&:active
+				box-shadow: 0px 0px 80px
+		&:after
+				content: '-'
+		&.btn-m-remove:after
+				content: ''

@@ -1,0 +1,82 @@
+/* line 3, ../sass/app.sass */
+.page-content {
+  position: relative;
+  z-index: 1;
+  -webkit-transition: all 0.15s ease-out 0s;
+  -moz-transition: all 0.15s ease-out 0s;
+  transition: all 0.15s ease-out 0s;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+  -webkit-transform-origin: right center;
+  -moz-transform-origin: right center;
+  -ms-transform-origin: right center;
+  -o-transform-origin: right center;
+  transform-origin: right center;
+  height: 100%;
+}
+
+/* line 12, ../sass/app.sass */
+.toggle {
+  text-decoration: none;
+  font-size: 30px;
+  color: black;
+  -webkit-transition: all 0.15s ease-out 0s;
+  -moz-transition: all 0.15s ease-out 0s;
+  transition: all 0.15s ease-out 0s;
+  position: fixed;
+  left: 20px;
+  z-index: 2;
+}
+
+/* line 21, ../sass/app.sass */
+.sidebar {
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  left: -144px;
+  width: 120px;
+  padding: 30px;
+  background: #333333;
+  z-index: 0;
+
+}
+/* line 28, ../sass/app.sass */
+.sidebar li {
+  color: rgba(255, 255, 255, 0.8);
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  margin-bottom: 16px;
+  -webkit-font-smoothing: antialiased;
+  cursor: pointer;
+}
+/* line 36, ../sass/app.sass */
+.sidebar li:hover {
+  color: white;
+}
+
+/* line 39, ../sass/app.sass */
+#sidebartoggler {
+  display: none;
+}
+/* line 44, ../sass/app.sass */
+#sidebartoggler:checked + .toggle {
+  left: 250px;
+}
+
+#sidebartoggler:checked + .page-wrap .page-content + .sidebar{
+	left: 0px;
+}
+/* line 47, ../sass/app.sass */
+#sidebartoggler:checked + .page-wrap .page-content {
+  -webkit-transform: scale(0.7);
+  -moz-transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  -o-transform: scale(0.7);
+  transform: scale(0.7);
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+

@@ -1,0 +1,97 @@
+  
+.user-icon
+    color: #1FC387
+
+.password-icon
+    color: darkcyan
+    
+/* formSignin.name no valid color */
+form md-input-container.md-input-invalid md-icon
+    color: rgb(221,44,0)
+
+
+/* Start - style for Available Email */
+.inp-mess
+    display: inline
+    margin-top: 2px
+    color: rgb(136, 121, 107)
+    font-size: xx-small
+    font-style: oblique
+    margin-left: 4px
+
+/* Valid */
+.v:before
+    content: '✔ '
+    color: green
+
+/* loading */
+.l
+    background-image: url('http://laravelangular.io/assets/img/pending.gif')
+    background-repeat: no-repeat
+    background-size: 8px        
+    padding-left: 10px
+
+/* invalid */
+.e:before
+    content: '◆ '
+    color: rgb(221,44,0)
+
+/* End */    
+
+/* formSignin.name messages */
+.inp-mess-error 
+    display: inline
+    margin-top: 2px
+    color: rgb(136, 121, 107)
+    font-size: xx-small
+    font-style: oblique
+
+    &:before
+        content: '◆ '
+        color: rgb(221,44,0)
+
+
+
+.valid-characters:before
+    content: '✔ '
+    color: green
+
+
+.form-signin .md-input-invalid > md-icon.name 
+    fill: rgb(221,44,0)
+
+
+
+.signin-error 
+    white-space: nowrap
+    color: red
+    font-size: small
+    margin: auto
+    visibility: hidden
+    content: ''
+    /* border: 1px dashed black
+    border: 1px dashed black
+    margin-top: 15px
+    border-width: 1px 0px 1px 0px
+    /* background: lavenderblush */
+    font-family: monospace
+    /* text-decoration: underline */
+    padding: 3px 11px 3px 11px
+
+ 
+/* form signup pading */
+.pending
+    background-image: url('http://fatherofcents.com/wp-content/uploads/2011/09/loaderA16.gif')
+    background-repeat: no-repeat
+    background-size: 9px
+    margin-left: 1px
+    padding-left: 9px
+
+    &:before
+        content: ' '
+
+.forgot-pass
+    font-size: small
+    font-weight: bold
+    cursor: pointer
+    outline: none
